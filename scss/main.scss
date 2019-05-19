@@ -1,0 +1,175 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "bootstrap-overrides.scss";
+
+body {
+  margin: 0; padding: 0;
+  .container-fluid {
+    padding: 0;
+  }
+  section.nav {
+    padding: $buffer*3;
+    font-family: $secondaryFontFamily;
+    font-size: $smallFontSize;
+    display: flex;
+    .nav-items {
+      width: 100%;
+      align-items: center;
+      .link {
+        .nav-icon {
+          span {
+            @include transition;
+            &.back {
+              margin-left: $buffer*5;
+            }
+          }
+          &:hover {
+            span {
+              margin-left: $buffer*5;
+              @include transition;
+              &.back {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+      .contact {
+        text-align: right;
+        @include breakpoint(md) {
+          text-align: left;
+        }
+      }
+    }
+  }
+  section.hero-section {
+    padding: $buffer*10 $buffer*3;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    font-family: $primaryFontFamily;
+    .hero-text {
+      width: 100%;
+      .intro-text {
+        font-size: $largeFontSize;
+        line-height: $largeLineHeight;
+        span {
+          // color: blue;
+        }
+      }
+    }
+  }
+  section.project-section {
+    font-family: $secondaryFontFamily;
+    .project-item {
+      padding: $buffer*3;
+      border-top: 1px solid $fontColorPrimary;
+      .project-header {
+        margin-bottom: $buffer*3;
+        font-size: $smallFontSize;
+        .project-title {}
+        .project-type {
+          color: $fontColorSecondary;
+        }
+        .project-year {
+          text-align: right;
+          color: $fontColorSecondary;
+          @include breakpoint(md) {
+            text-align: left;
+          }
+        }
+      }
+    }
+    .project-body {
+      .project-summary {
+        font-family: $primaryFontFamily;
+        font-size: $mediumFontSize;
+        line-height: $mediumLineHeight;
+        margin-bottom: $buffer*3;
+        a.project-link {
+          font-family: $secondaryFontFamily;
+          font-size: $smallFontSize;
+          span {
+            @include transition;
+          }
+          &:hover {
+            span {
+              margin-left: $buffer*5;
+              @include transition;
+            }
+          }
+        }
+      }
+      .project-image {
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    //PROJECT PAGES
+
+    .project-body-hero {
+      padding: $buffer*3 0 0 0  ;
+      overflow: hidden;
+      .hero-image {
+        padding: 0;
+        background: #bbb;
+        img {
+          width: 100%;
+          opacity: .9;
+        }
+      }
+    }
+    .essay {
+
+    }
+    .project-body-essay {
+      // margin: $buffer*3;
+      height: 100vh;
+      width: 100vw;
+      background: $fontColorPrimary;
+      .prev {
+        width: 50vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        z-index: 100;
+        background: blue;
+        opacity: .7;
+      }
+      .next {
+        width: 50vw;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        z-index: 100;
+        background: blue;
+        opacity: .3;
+      }
+      .essay-carousel {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .essay-page {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 50vw;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .project-page {
+    .project-header {
+      margin-bottom: 0 !important;
+    }
+  }
+}
