@@ -68,3 +68,15 @@
     @include animation($animationDuration, 0s, easeUp);
   }
 }
+[data-aos="worksFade1"] {
+  // opacity: 0;
+  &.aos-animate {
+    @include animation($animationDuration, 1s, easeUp);
+  }
+}
+[data-aos="worksFade2"] {
+  // opacity: 0;
+  &.aos-animate {
+    @include animation($animationDuration, 2s, easeUp);
+  }
+}

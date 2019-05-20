@@ -20,6 +20,12 @@
 [data-aos="worksFade"].aos-animate {
   animation: 5s ease-out 0s 1 easeUp forwards; }
 
+[data-aos="worksFade1"].aos-animate {
+  animation: 5s ease-out 1s 1 easeUp forwards; }
+
+[data-aos="worksFade2"].aos-animate {
+  animation: 5s ease-out 2s 1 easeUp forwards; }
+
 a:link {
   color: blue;
   text-decoration: none;
@@ -97,6 +103,12 @@ body {
       body section.hero-section .hero-text .intro-text {
         font-size: 40px;
         line-height: 60px; }
+        body section.hero-section .hero-text .intro-text .intro {
+          opacity: 0;
+          -webkit-transition: all 5s ease-in-out;
+          -moz-transition: all 5s ease-in-out;
+          -o-transition: all 5s ease-in-out;
+          transition: all 5s ease-in-out; }
   body section.project-section {
     font-family: "Inconsolata", serif; }
     body section.project-section .project-item {

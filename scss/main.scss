@@ -57,6 +57,10 @@ body {
         span {
           // color: blue;
         }
+        .intro {
+          opacity: 0;
+          @include transition;
+        }
       }
     }
   }
