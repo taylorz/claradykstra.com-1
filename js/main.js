@@ -2,12 +2,12 @@ $('document').ready(function(){
   AOS.init({
     once: true
   });
-  $('.essay-carousel').slick({
+  $('.the-carousel').slick({
 	  dots: false,
     centerMode: true,
     centerPadding: '15%',
 	  infinite: false,
-	  speed: 250,
+	  speed: 5000,
 	  slidesToShow: 1,
 	  easing: 'easeInOut',
     // fade: true,

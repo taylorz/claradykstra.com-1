@@ -89,9 +89,10 @@ body {
     padding: 100px 30px;
     height: 80vh;
     display: flex;
-    align-items: center;
     font-family: "IBM Plex Sans", serif; }
     body section.hero-section .hero-text {
+      align-items: center;
+      justify-content: center;
       width: 100%; }
       body section.hero-section .hero-text .intro-text {
         font-size: 40px;
@@ -136,44 +137,64 @@ body {
       body section.project-section .project-body .project-image img {
         width: 100%; }
     body section.project-section .project-body-hero {
-      padding: 30px 0 0 0;
-      overflow: hidden; }
-      body section.project-section .project-body-hero .hero-image {
+      margin-top: 30px;
+      padding: 0;
+      overflow: hidden;
+      border-top: 1px solid black; }
+      body section.project-section .project-body-hero .fullwidth-image {
         padding: 0;
         background: #bbb; }
-        body section.project-section .project-body-hero .hero-image img {
+        body section.project-section .project-body-hero .fullwidth-image img {
           width: 100%;
           opacity: .9; }
-    body section.project-section .project-body-essay {
-      height: 100vh;
-      width: 100vw;
-      background: #00000a; }
-      body section.project-section .project-body-essay .prev {
+    body section.project-section .project-body-carousel {
+      height: 60vh;
+      width: 100vw; }
+      body section.project-section .project-body-carousel .carousel-control {
         width: 50vw;
-        height: 100vh;
+        height: 60vh;
         position: absolute;
-        left: 0;
-        z-index: 100;
-        background: blue;
-        opacity: .7; }
-      body section.project-section .project-body-essay .next {
-        width: 50vw;
-        height: 100vh;
-        position: absolute;
-        right: 0;
-        z-index: 100;
-        background: blue;
-        opacity: .3; }
-      body section.project-section .project-body-essay .essay-carousel {
+        z-index: 100; }
+        body section.project-section .project-body-carousel .carousel-control.prev {
+          left: 0; }
+          body section.project-section .project-body-carousel .carousel-control.prev:hover {
+            cursor: url("../assets/icons/prev.png"), auto; }
+        body section.project-section .project-body-carousel .carousel-control.next {
+          right: 0; }
+          body section.project-section .project-body-carousel .carousel-control.next:hover {
+            cursor: url("../assets/icons/next.png"), auto; }
+      body section.project-section .project-body-carousel .the-carousel {
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center; }
-        body section.project-section .project-body-essay .essay-carousel .essay-page {
+        body section.project-section .project-body-carousel .the-carousel .essay-page {
           display: flex;
           align-items: center;
           justify-content: center; }
-          body section.project-section .project-body-essay .essay-carousel .essay-page img {
-            width: 50vw; }
+          body section.project-section .project-body-carousel .the-carousel .essay-page img {
+            max-width: 50vw; }
+    body section.project-section .project-body-statement {
+      margin: 200px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "IBM Plex Sans", serif;
+      font-size: 20px;
+      line-height: 35px; }
+      @media (max-width: 768px) {
+        body section.project-section .project-body-statement {
+          margin-top: 30px 0 0 0; } }
+    body section.project-section .project-body-segment {
+      margin: 200px 30px;
+      padding: 0;
+      display: flex;
+      justify-content: center; }
+      body section.project-section .project-body-segment .segment-image {
+        background: #ccc;
+        padding: 0; }
+        body section.project-section .project-body-segment .segment-image img {
+          opacity: .9;
+          width: 100%; }
   body .project-page .project-header {
     margin-bottom: 0 !important; }

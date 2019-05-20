@@ -46,9 +46,10 @@ body {
     padding: $buffer*10 $buffer*3;
     height: 80vh;
     display: flex;
-    align-items: center;
     font-family: $primaryFontFamily;
     .hero-text {
+      align-items: center;
+      justify-content: center;
       width: 100%;
       .intro-text {
         font-size: $largeFontSize;
@@ -111,9 +112,11 @@ body {
     //PROJECT PAGES
 
     .project-body-hero {
-      padding: $buffer*3 0 0 0  ;
+      margin-top: $buffer*3;
+      padding: 0;
       overflow: hidden;
-      .hero-image {
+      border-top: 1px solid black;
+      .fullwidth-image {
         padding: 0;
         background: #bbb;
         img {
@@ -125,30 +128,33 @@ body {
     .essay {
 
     }
-    .project-body-essay {
+    .project-body-carousel {
       // margin: $buffer*3;
-      height: 100vh;
+      height: 60vh;
       width: 100vw;
-      background: $fontColorPrimary;
-      .prev {
+      // background: $fontColorPrimary;
+      // overflow: hidden;
+      .carousel-control {
         width: 50vw;
-        height: 100vh;
+        height: 60vh;
         position: absolute;
-        left: 0;
         z-index: 100;
-        background: blue;
-        opacity: .7;
+        // background: blue;
+        // opacity: .7;
+        &.prev {
+          left: 0;
+          &:hover {
+            cursor: url('../assets/icons/prev.png'), auto;
+          }
+        }
+        &.next {
+          right: 0;
+          &:hover {
+            cursor: url('../assets/icons/next.png'), auto;
+          }
+        }
       }
-      .next {
-        width: 50vw;
-        height: 100vh;
-        position: absolute;
-        right: 0;
-        z-index: 100;
-        background: blue;
-        opacity: .3;
-      }
-      .essay-carousel {
+      .the-carousel {
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -158,12 +164,39 @@ body {
           align-items: center;
           justify-content: center;
           img {
-            width: 50vw;
+            max-width: 50vw;
+            // width: 600px;
           }
         }
       }
+    } //carousel
+    .project-body-statement {
+      margin: $buffer*20 0;
+      @include breakpoint(sm) {
+        margin-top: $buffer*3 0 0 0;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $primaryFontFamily;
+      font-size: $mediumFontSize;
+      line-height: $mediumLineHeight;
     }
 
+    .project-body-segment {
+      margin: $buffer*20 $buffer*3;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      .segment-image {
+        background: #ccc;
+        padding: 0;
+        img {
+          opacity: .9;
+          width: 100%;
+        }
+      }
+    }
 
   }
 
