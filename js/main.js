@@ -10,6 +10,8 @@ $('document').ready(function(){
 	  speed: 5000,
 	  slidesToShow: 1,
 	  easing: 'easeInOut',
+  
+
     // fade: true,
     // focusOnSelect: true,
     // arrows: false,

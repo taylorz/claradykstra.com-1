@@ -18,45 +18,45 @@
     opacity: 1; } }
 
 [data-aos="worksFade"].aos-animate {
-  animation: 5s ease-out 0s 1 easeUp forwards; }
+  animation: 2s ease-out 0s 1 easeUp forwards; }
 
 [data-aos="worksFade1"].aos-animate {
-  animation: 5s ease-out 1s 1 easeUp forwards; }
+  animation: 2s ease-out 1s 1 easeUp forwards; }
 
 [data-aos="worksFade2"].aos-animate {
-  animation: 5s ease-out 2s 1 easeUp forwards; }
+  animation: 2s ease-out 2s 1 easeUp forwards; }
 
 a:link {
   color: blue;
   text-decoration: none;
-  -webkit-transition: all 5s ease-in-out;
-  -moz-transition: all 5s ease-in-out;
-  -o-transition: all 5s ease-in-out;
-  transition: all 5s ease-in-out; }
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; }
 
 a:visited {
   color: blue;
   text-decoration: none;
-  -webkit-transition: all 5s ease-in-out;
-  -moz-transition: all 5s ease-in-out;
-  -o-transition: all 5s ease-in-out;
-  transition: all 5s ease-in-out; }
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; }
 
 a:hover {
   color: blue;
   text-decoration: none;
-  -webkit-transition: all 5s ease-in-out;
-  -moz-transition: all 5s ease-in-out;
-  -o-transition: all 5s ease-in-out;
-  transition: all 5s ease-in-out; }
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; }
 
 a.active {
   color: blue;
   text-decoration: none;
-  -webkit-transition: all 5s ease-in-out;
-  -moz-transition: all 5s ease-in-out;
-  -o-transition: all 5s ease-in-out;
-  transition: all 5s ease-in-out; }
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; }
 
 body {
   margin: 0;
@@ -66,24 +66,24 @@ body {
   body section.nav {
     padding: 30px;
     font-family: "Inconsolata", serif;
-    font-size: 16px;
+    font-size: 14px;
     display: flex; }
     body section.nav .nav-items {
       width: 100%;
       align-items: center; }
       body section.nav .nav-items .link .nav-icon span {
-        -webkit-transition: all 5s ease-in-out;
-        -moz-transition: all 5s ease-in-out;
-        -o-transition: all 5s ease-in-out;
-        transition: all 5s ease-in-out; }
+        -webkit-transition: all 2s ease-in-out;
+        -moz-transition: all 2s ease-in-out;
+        -o-transition: all 2s ease-in-out;
+        transition: all 2s ease-in-out; }
         body section.nav .nav-items .link .nav-icon span.back {
           margin-left: 50px; }
       body section.nav .nav-items .link .nav-icon:hover span {
         margin-left: 50px;
-        -webkit-transition: all 5s ease-in-out;
-        -moz-transition: all 5s ease-in-out;
-        -o-transition: all 5s ease-in-out;
-        transition: all 5s ease-in-out; }
+        -webkit-transition: all 2s ease-in-out;
+        -moz-transition: all 2s ease-in-out;
+        -o-transition: all 2s ease-in-out;
+        transition: all 2s ease-in-out; }
         body section.nav .nav-items .link .nav-icon:hover span.back {
           margin-left: 0; }
       body section.nav .nav-items .contact {
@@ -101,14 +101,14 @@ body {
       justify-content: center;
       width: 100%; }
       body section.hero-section .hero-text .intro-text {
-        font-size: 40px;
-        line-height: 60px; }
+        font-size: 34px;
+        line-height: 51px; }
         body section.hero-section .hero-text .intro-text .intro {
           opacity: 0;
-          -webkit-transition: all 5s ease-in-out;
-          -moz-transition: all 5s ease-in-out;
-          -o-transition: all 5s ease-in-out;
-          transition: all 5s ease-in-out; }
+          -webkit-transition: all 2s ease-in-out;
+          -moz-transition: all 2s ease-in-out;
+          -o-transition: all 2s ease-in-out;
+          transition: all 2s ease-in-out; }
   body section.project-section {
     font-family: "Inconsolata", serif; }
     body section.project-section .project-item {
@@ -116,7 +116,7 @@ body {
       border-top: 1px solid #00000a; }
       body section.project-section .project-item .project-header {
         margin-bottom: 30px;
-        font-size: 16px; }
+        font-size: 14px; }
         body section.project-section .project-item .project-header .project-type {
           color: #bbbbba; }
         body section.project-section .project-item .project-header .project-year {
@@ -127,23 +127,23 @@ body {
               text-align: left; } }
     body section.project-section .project-body .project-summary {
       font-family: "IBM Plex Sans", serif;
-      font-size: 20px;
-      line-height: 35px;
+      font-size: 18px;
+      line-height: 27px;
       margin-bottom: 30px; }
       body section.project-section .project-body .project-summary a.project-link {
         font-family: "Inconsolata", serif;
-        font-size: 16px; }
+        font-size: 14px; }
         body section.project-section .project-body .project-summary a.project-link span {
-          -webkit-transition: all 5s ease-in-out;
-          -moz-transition: all 5s ease-in-out;
-          -o-transition: all 5s ease-in-out;
-          transition: all 5s ease-in-out; }
+          -webkit-transition: all 2s ease-in-out;
+          -moz-transition: all 2s ease-in-out;
+          -o-transition: all 2s ease-in-out;
+          transition: all 2s ease-in-out; }
         body section.project-section .project-body .project-summary a.project-link:hover span {
           margin-left: 50px;
-          -webkit-transition: all 5s ease-in-out;
-          -moz-transition: all 5s ease-in-out;
-          -o-transition: all 5s ease-in-out;
-          transition: all 5s ease-in-out; }
+          -webkit-transition: all 2s ease-in-out;
+          -moz-transition: all 2s ease-in-out;
+          -o-transition: all 2s ease-in-out;
+          transition: all 2s ease-in-out; }
     body section.project-section .project-body .project-image {
       overflow: hidden; }
       body section.project-section .project-body .project-image img {
@@ -192,8 +192,8 @@ body {
       align-items: center;
       justify-content: center;
       font-family: "IBM Plex Sans", serif;
-      font-size: 20px;
-      line-height: 35px; }
+      font-size: 18px;
+      line-height: 27px; }
       @media (max-width: 768px) {
         body section.project-section .project-body-statement {
           margin-top: 30px 0 0 0; } }
@@ -208,5 +208,14 @@ body {
         body section.project-section .project-body-segment .segment-image img {
           opacity: .9;
           width: 100%; }
+    body section.project-section .project-body-longImage .long-image-container {
+      padding: 0;
+      background: #ccc;
+      width: 100vw;
+      overflow-y: scroll;
+      margin: 0 0 200px 0; }
+      body section.project-section .project-body-longImage .long-image-container img {
+        height: 80vh;
+        opacity: 0.9; }
   body .project-page .project-header {
     margin-bottom: 0 !important; }

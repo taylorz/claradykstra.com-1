@@ -201,6 +201,20 @@ body {
         }
       }
     }
+    .project-body-longImage {
+      .long-image-container {
+        padding: 0;
+        background: #ccc;
+        width: 100vw;
+        overflow-y: scroll;
+        margin: 0 0 $buffer*20 0;
+
+        img {
+          height: 80vh;
+          opacity: 0.9;
+        }
+      }
+    }
 
   }
 
