@@ -43,13 +43,13 @@ body {
     }
   }
   section.hero-section {
-    padding: $buffer*10 $buffer*3;
-    height: 80vh;
+    padding: $buffer*3;
+    height: 60vh;
     display: flex;
     font-family: $primaryFontFamily;
     .hero-text {
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
+      justify-content: flex-start;
       width: 100%;
       .intro-text {
         font-size: $largeFontSize;
@@ -72,7 +72,9 @@ body {
       .project-header {
         margin-bottom: $buffer*3;
         font-size: $smallFontSize;
-        .project-title {}
+        .project-title {
+          font-weight: 800;
+        }
         .project-type {
           color: $fontColorSecondary;
         }
@@ -88,8 +90,8 @@ body {
     .project-body {
       .project-summary {
         font-family: $primaryFontFamily;
-        font-size: $mediumFontSize;
-        line-height: $mediumLineHeight;
+        font-size: $smallFontSize;
+        line-height: $smallLineHeight;
         margin-bottom: $buffer*3;
         a.project-link {
           font-family: $secondaryFontFamily;

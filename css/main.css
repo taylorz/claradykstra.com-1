@@ -92,13 +92,13 @@ body {
           body section.nav .nav-items .contact {
             text-align: left; } }
   body section.hero-section {
-    padding: 100px 30px;
-    height: 80vh;
+    padding: 30px;
+    height: 60vh;
     display: flex;
     font-family: "IBM Plex Sans", serif; }
     body section.hero-section .hero-text {
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
+      justify-content: flex-start;
       width: 100%; }
       body section.hero-section .hero-text .intro-text {
         font-size: 34px;
@@ -117,6 +117,8 @@ body {
       body section.project-section .project-item .project-header {
         margin-bottom: 30px;
         font-size: 14px; }
+        body section.project-section .project-item .project-header .project-title {
+          font-weight: 800; }
         body section.project-section .project-item .project-header .project-type {
           color: #bbbbba; }
         body section.project-section .project-item .project-header .project-year {
@@ -127,8 +129,8 @@ body {
               text-align: left; } }
     body section.project-section .project-body .project-summary {
       font-family: "IBM Plex Sans", serif;
-      font-size: 18px;
-      line-height: 27px;
+      font-size: 14px;
+      line-height: 24.5px;
       margin-bottom: 30px; }
       body section.project-section .project-body .project-summary a.project-link {
         font-family: "Inconsolata", serif;
