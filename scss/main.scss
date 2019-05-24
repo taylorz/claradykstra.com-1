@@ -136,7 +136,6 @@ body {
     }
     .project-body-carousel {
       // margin: $buffer*3;
-      height: 60vh;
       width: 100vw;
       // background: $fontColorPrimary;
       // overflow: hidden;
@@ -160,19 +159,32 @@ body {
           }
         }
       }
-      .the-carousel {
+      .the-carousel, .the-carousel-captions {
+        background: #f5f5f5;
+        padding: $buffer*10 0 0 0 ;
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
-        .essay-page {
+        .slick-slide {
+          position: relative;
+        }
+        .essay-page, .essay-page-captions {
           display: flex;
           align-items: center;
           justify-content: center;
           img {
             max-width: 50vw;
+            opacity: .9;
             // width: 600px;
           }
+        }
+      }
+      .the-carousel-captions {
+        padding: $buffer*10 0 !important;
+        font-size: $smallFontSize;
+        .essay-page-captions {
+          padding: 0 !important;
         }
       }
     } //carousel
