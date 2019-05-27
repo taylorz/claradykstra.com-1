@@ -147,9 +147,12 @@ body {
           -o-transition: all 0.15s ease-in-out;
           transition: all 0.15s ease-in-out; }
     body section.project-section .project-body .project-image {
-      overflow: hidden; }
+      overflow: hidden;
+      background: #bbbbba;
+      padding: 0; }
       body section.project-section .project-body .project-image img {
-        width: 100%; }
+        width: 100%;
+        opacity: .9; }
     body section.project-section .project-body-hero {
       margin-top: 30px;
       padding: 0;
@@ -157,7 +160,7 @@ body {
       border-top: 1px solid #dddddd; }
       body section.project-section .project-body-hero .fullwidth-image {
         padding: 0;
-        background: #dddddd; }
+        background: #bbbbba; }
         body section.project-section .project-body-hero .fullwidth-image img {
           width: 100%;
           opacity: .9; }
@@ -223,6 +226,10 @@ body {
         body section.project-section .project-body-segment .segment-image img {
           opacity: .9;
           width: 100%; }
+        body section.project-section .project-body-segment .segment-image.no-bg {
+          background: none; }
+          body section.project-section .project-body-segment .segment-image.no-bg img {
+            opacity: 1; }
     body section.project-section .project-body-longImage .long-image-container {
       padding: 0;
       background: #dddddd;
