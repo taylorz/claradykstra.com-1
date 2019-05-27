@@ -135,10 +135,7 @@ body {
 
     }
     .project-body-carousel {
-      // margin: $buffer*3;
       width: 100vw;
-      // background: $fontColorPrimary;
-      // overflow: hidden;
       position: relative;
       .carousel-control {
         width: 50vw;
@@ -174,6 +171,7 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
+          width: 100vw;
           img {
             max-width: 50vw;
             opacity: .9;
@@ -209,8 +207,9 @@ body {
       display: flex;
       justify-content: center;
       .segment-image {
-        background: $bgColorMedium;
+        background: $fontColorSecondary;
         padding: 0;
+        margin: 0 0 $buffer*10 0;
         img {
           opacity: .9;
           width: 100%;
@@ -231,9 +230,71 @@ body {
         }
       }
     }
+  } //section.project-section
+  .next-project {
+    font-family: $secondaryFontFamily;
+    font-size: $smallFontSize;
 
-  }
-
+    .next-project-nav {
+      border-top: 1px solid $bgColorMedium;
+      margin: 0; padding: $buffer*3;
+      .link {
+        .nav-icon {
+          span {
+            @include transition;
+            &.back {
+              margin-left: $buffer*5;
+            }
+          }
+          &:hover {
+            span {
+              margin-left: $buffer*5;
+              @include transition;
+              &.back {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+      .contact {
+        text-align: right;
+        @include breakpoint(md) {
+          text-align: left;
+        }
+      }
+    }
+    .next-project-link {
+      display: inline-block;
+      width: 100vw;
+      color: $fontColorLight;
+      background: blue;
+      @include transition;
+      &:hover {
+        background: $bgColorLight;
+        color: $fontColorPrimary;
+        @include transition;
+      }
+    }
+    .next-project-container {
+      border-top: 1px solid $bgColorMedium;
+      margin: 0; padding: $buffer*3;
+      font-size: $smallFontSize;
+      .project-title {
+        font-weight: 800;
+      }
+      .project-type {
+        color: $fontColorSecondary;
+      }
+      .project-year {
+        text-align: right;
+        color: $fontColorSecondary;
+        @include breakpoint(md) {
+          text-align: left;
+        }
+      }
+    }
+  }//next-project
   .project-page {
     .project-header {
       margin-bottom: 0 !important;
