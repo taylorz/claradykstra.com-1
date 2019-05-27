@@ -113,7 +113,7 @@ body {
     font-family: "Inconsolata", serif; }
     body section.project-section .project-item {
       padding: 30px;
-      border-top: 1px solid #00000a; }
+      border-top: 1px solid #dddddd; }
       body section.project-section .project-item .project-header {
         margin-bottom: 30px;
         font-size: 14px; }
@@ -154,10 +154,10 @@ body {
       margin-top: 30px;
       padding: 0;
       overflow: hidden;
-      border-top: 1px solid black; }
+      border-top: 1px solid #dddddd; }
       body section.project-section .project-body-hero .fullwidth-image {
         padding: 0;
-        background: #bbb; }
+        background: #dddddd; }
         body section.project-section .project-body-hero .fullwidth-image img {
           width: 100%;
           opacity: .9; }
@@ -168,9 +168,7 @@ body {
         width: 50vw;
         height: 100%;
         position: absolute;
-        z-index: 100;
-        background: blue;
-        opacity: .7; }
+        z-index: 100; }
         body section.project-section .project-body-carousel .carousel-control.prev {
           left: 0; }
           body section.project-section .project-body-carousel .carousel-control.prev:hover {
@@ -218,14 +216,14 @@ body {
       display: flex;
       justify-content: center; }
       body section.project-section .project-body-segment .segment-image {
-        background: #ccc;
+        background: #dddddd;
         padding: 0; }
         body section.project-section .project-body-segment .segment-image img {
           opacity: .9;
           width: 100%; }
     body section.project-section .project-body-longImage .long-image-container {
       padding: 0;
-      background: #ccc;
+      background: #dddddd;
       width: 100vw;
       overflow-y: scroll;
       margin: 0 0 200px 0; }

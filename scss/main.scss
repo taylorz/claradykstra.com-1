@@ -68,7 +68,7 @@ body {
     font-family: $secondaryFontFamily;
     .project-item {
       padding: $buffer*3;
-      border-top: 1px solid $fontColorPrimary;
+      border-top: 1px solid $bgColorMedium;
       .project-header {
         margin-bottom: $buffer*3;
         font-size: $smallFontSize;
@@ -121,10 +121,10 @@ body {
       margin-top: $buffer*3;
       padding: 0;
       overflow: hidden;
-      border-top: 1px solid black;
+      border-top: 1px solid $bgColorMedium;
       .fullwidth-image {
         padding: 0;
-        background: #bbb;
+        background: $bgColorMedium;
         img {
           width: 100%;
           opacity: .9;
@@ -145,8 +145,8 @@ body {
         height: 100%;
         position: absolute;
         z-index: 100;
-        background: blue;
-        opacity: .7;
+        // background: blue;
+        // opacity: .7;
         &.prev {
           left: 0;
           &:hover {
@@ -209,7 +209,7 @@ body {
       display: flex;
       justify-content: center;
       .segment-image {
-        background: #ccc;
+        background: $bgColorMedium;
         padding: 0;
         img {
           opacity: .9;
@@ -220,7 +220,7 @@ body {
     .project-body-longImage {
       .long-image-container {
         padding: 0;
-        background: #ccc;
+        background: $bgColorMedium;
         width: 100vw;
         overflow-y: scroll;
         margin: 0 0 $buffer*20 0;
