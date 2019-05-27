@@ -139,13 +139,14 @@ body {
       width: 100vw;
       // background: $fontColorPrimary;
       // overflow: hidden;
+      position: relative;
       .carousel-control {
         width: 50vw;
-        height: 60vh;
+        height: 100%;
         position: absolute;
         z-index: 100;
-        // background: blue;
-        // opacity: .7;
+        background: blue;
+        opacity: .7;
         &.prev {
           left: 0;
           &:hover {

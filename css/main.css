@@ -162,12 +162,15 @@ body {
           width: 100%;
           opacity: .9; }
     body section.project-section .project-body-carousel {
-      width: 100vw; }
+      width: 100vw;
+      position: relative; }
       body section.project-section .project-body-carousel .carousel-control {
         width: 50vw;
-        height: 60vh;
+        height: 100%;
         position: absolute;
-        z-index: 100; }
+        z-index: 100;
+        background: blue;
+        opacity: .7; }
         body section.project-section .project-body-carousel .carousel-control.prev {
           left: 0; }
           body section.project-section .project-body-carousel .carousel-control.prev:hover {
