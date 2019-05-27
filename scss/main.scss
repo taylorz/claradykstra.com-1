@@ -160,7 +160,7 @@ body {
         }
       }
       .the-carousel, .the-carousel-captions {
-        background: #f5f5f5;
+        background: $bgColorLight;
         padding: $buffer*10 0 0 0 ;
         overflow: hidden;
         display: flex;
@@ -183,6 +183,7 @@ body {
       .the-carousel-captions {
         padding: $buffer*10 0 !important;
         font-size: $smallFontSize;
+        text-align: center;
         .essay-page-captions {
           padding: 0 !important;
         }

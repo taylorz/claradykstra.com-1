@@ -4,13 +4,15 @@ $linkColor:                   blue;
 $fontColorPrimary:            #00000a;
 $fontColorSecondary:          #bbbbba;
 $fontColorLight:              #ffffff;
+$bgColorLight:                #f5f5f5;
+$bgColorDark:                 $fontColorPrimary;
 
 $primaryFontFamily:           'IBM Plex Sans', serif;
 $secondaryFontFamily:         'Inconsolata', serif;
 $largeFontSize:               34px;
 $largeLineHeight:             $largeFontSize*1.5;
 $mediumFontSize:              18px;
-$mediumLineHeight:            $mediumFontSize*1.5;
+$mediumLineHeight:            $mediumFontSize*1.75;
 $smallFontSize:               14px;
 $smallLineHeight:             $smallFontSize*1.75;
 
