@@ -12,10 +12,12 @@ body {
     font-family: $secondaryFontFamily;
     font-size: $smallFontSize;
     display: flex;
+    justify-content: center;
     .nav-items {
       width: 100%;
       align-items: center;
       .link {
+        margin-left: 0; padding-left: 0;
         .nav-icon {
           span {
             @include transition;
@@ -36,8 +38,10 @@ body {
       }
       .contact {
         text-align: right;
+        margin-right: 0; padding-right: 0;
         @include breakpoint(md) {
           text-align: left;
+          padding-left: 0;
         }
       }
     }
@@ -66,9 +70,14 @@ body {
   }
   section.project-section {
     font-family: $secondaryFontFamily;
+    // border-bottom: 1px solid $bgColorMedium;
     .project-item {
-      padding: $buffer*3;
+      padding: $buffer*3 $buffer*3 0 $buffer*3;
       border-top: 1px solid $bgColorMedium;
+      &.project-item-index {
+        padding: $buffer*3;
+        padding-right: $buffer*4; //WEIRD
+      }
       .project-header {
         margin-bottom: $buffer*3;
         font-size: $smallFontSize;
@@ -111,9 +120,16 @@ body {
         overflow: hidden;
         background: $fontColorSecondary;
         padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         img {
           width: 100%;
           opacity: .9;
+          &.img-essay {
+            padding: $buffer*15;
+            -webkit-transform: rotate(2deg);
+          }
         }
       }
     }
@@ -141,7 +157,7 @@ body {
       width: 100vw;
       position: relative;
       .carousel-control {
-        width: 50vw;
+        width: 60vw;
         height: 100%;
         position: absolute;
         z-index: 100;
@@ -162,7 +178,7 @@ body {
       }
       .the-carousel, .the-carousel-captions {
         background: $bgColorLight;
-        padding: $buffer*10 0 0 0 ;
+        padding: $buffer*5 0 0 0 ;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -172,18 +188,21 @@ body {
         }
         .essay-page, .essay-page-captions {
           display: flex;
-          align-items: center;
           justify-content: center;
           width: 100vw;
           img {
-            max-width: 50vw;
+            // max-height: 50vh;
+            max-width: 60vw;
+            max-height: 80vh;
             opacity: .9;
+            flex: 0 0 auto;  /* IE */
+            object-fit: scale-down; /* FF */
             // width: 600px;
           }
         }
       }
       .the-carousel-captions {
-        padding: $buffer*10 0 !important;
+        padding: $buffer*5 0 !important;
         font-size: $smallFontSize;
         text-align: center;
         .essay-page-captions {
@@ -192,7 +211,7 @@ body {
       }
     } //carousel
     .project-body-statement {
-      margin: $buffer*20 0;
+      margin: $buffer*15 0;
       @include breakpoint(sm) {
         margin-top: $buffer*3 0 0 0;
       }
@@ -202,10 +221,22 @@ body {
       font-family: $primaryFontFamily;
       font-size: $mediumFontSize;
       line-height: $mediumLineHeight;
+        h3 {
+          margin-bottom: $mediumLineHeight*2;
+          text-align: center;
+          font-size: $largeFontSize*2;
+          // color: blue;
+        }
+       p {
+         margin-bottom: $mediumLineHeight*2;
+         &:last-child {
+           margin-bottom: 0;
+         }
+       }
     }
 
     .project-body-segment {
-      margin: $buffer*20 $buffer*3;
+      margin: $buffer*10 $buffer*3;
       padding: 0;
       display: flex;
       justify-content: center;
@@ -224,15 +255,18 @@ body {
           }
         }
       }
+      &.no-mg {
+        margin: $buffer*6 0; padding: 0;
+      }
     }
     .project-body-longImage {
       .long-image-container {
         padding: 0;
-        background: $bgColorMedium;
+        background: $fontColorSecondary;
         width: 100vw;
         overflow-y: scroll;
-        margin: 0 0 $buffer*20 0;
-
+        // margin: 0 0 $buffer*20 0;
+        margin: 0;
         img {
           height: 80vh;
           opacity: 0.9;
