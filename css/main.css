@@ -271,6 +271,9 @@ body {
           background: none; }
           body section.project-section .project-body-segment .segment-image.no-bg img {
             opacity: 1; }
+      body section.project-section .project-body-segment .segment-video {
+        background: none;
+        text-align: center; }
       body section.project-section .project-body-segment.no-mg {
         margin: 0 0;
         padding: 0; }
