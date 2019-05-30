@@ -71,12 +71,18 @@
 [data-aos="worksFade1"] {
   // opacity: 0;
   &.aos-animate {
-    @include animation($animationDuration, 1s, easeUp);
+    @include animation($animationDuration, .25s, easeUp);
   }
 }
 [data-aos="worksFade2"] {
   // opacity: 0;
   &.aos-animate {
-    @include animation($animationDuration, 2s, easeUp);
+    @include animation($animationDuration, .5s, easeUp);
+  }
+}
+[data-aos="worksFade3"] {
+  // opacity: 0;
+  &.aos-animate {
+    @include animation($animationDuration, .75s, easeUp);
   }
 }
