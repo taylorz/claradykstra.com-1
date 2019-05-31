@@ -149,9 +149,10 @@ body {
       border-top: 1px solid $bgColorMedium;
       .fullwidth-image {
         padding: 0;
+        width: 100vw;
         background: $fontColorSecondary;
         img {
-          width: 100%;
+          width: 100% !important;
           opacity: .9;
         }
       }
@@ -265,6 +266,12 @@ body {
           background: none;
           img {
             opacity: 1;
+          }
+        }
+        &.light-bg {
+          background: $bgColorLight;
+          img {
+            opacity: .9;
           }
         }
       }
