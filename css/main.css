@@ -177,6 +177,11 @@ body {
         body section.project-section .project-body .project-image img.img-essay {
           padding: 150px;
           -webkit-transform: rotate(2deg); }
+    body section.project-section .reference {
+      padding: 10px 0; }
+      body section.project-section .reference a {
+        font-size: 14px;
+        color: #bbbbba; }
     body section.project-section .project-body-hero {
       margin-top: 30px;
       padding: 0;
@@ -189,11 +194,6 @@ body {
         body section.project-section .project-body-hero .fullwidth-image img {
           width: 100% !important;
           opacity: .9; }
-    body section.project-section .reference {
-      padding: 10px 0; }
-      body section.project-section .reference a {
-        font-size: 14px;
-        color: #bbbbba; }
     body section.project-section .project-body-carousel {
       width: 100vw;
       position: relative; }
@@ -217,6 +217,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: center; }
+        body section.project-section .project-body-carousel .the-carousel.essay-carousel .essay-page img, body section.project-section .project-body-carousel .the-carousel-captions.essay-carousel .essay-page img {
+          max-width: 60vw;
+          max-height: 80vh; }
         body section.project-section .project-body-carousel .the-carousel .slick-slide, body section.project-section .project-body-carousel .the-carousel-captions .slick-slide {
           position: relative; }
         body section.project-section .project-body-carousel .the-carousel .essay-page, body section.project-section .project-body-carousel .the-carousel .essay-page-captions, body section.project-section .project-body-carousel .the-carousel-captions .essay-page, body section.project-section .project-body-carousel .the-carousel-captions .essay-page-captions {
@@ -293,7 +296,8 @@ body {
       background: #bbbbba;
       width: 100vw;
       overflow-y: scroll;
-      margin: 0; }
+      margin: 0;
+      margin-top: 30px; }
       body section.project-section .project-body-longImage .long-image-container img {
         height: 80vh;
         opacity: 0.9; }
