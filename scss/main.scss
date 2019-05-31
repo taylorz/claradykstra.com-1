@@ -266,6 +266,9 @@ body {
         background: $fontColorSecondary;
         padding: 0;
         margin: 0 0 $buffer*10 0;
+        &:last-child {
+          // margin-bottom: 0;
+        }
         img {
           opacity: .9;
           width: 100%;
