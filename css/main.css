@@ -189,6 +189,11 @@ body {
         body section.project-section .project-body-hero .fullwidth-image img {
           width: 100% !important;
           opacity: .9; }
+    body section.project-section .reference {
+      padding: 10px 0; }
+      body section.project-section .reference a {
+        font-size: 14px;
+        color: #bbbbba; }
     body section.project-section .project-body-carousel {
       width: 100vw;
       position: relative; }
@@ -260,7 +265,8 @@ body {
       margin: 0 0 30px 0;
       padding: 0;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      width: 100%; }
       body section.project-section .project-body-segment .segment-image {
         background: #bbbbba;
         padding: 0;

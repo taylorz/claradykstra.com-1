@@ -157,6 +157,13 @@ body {
         }
       }
     }
+    .reference {
+      padding: $buffer 0;
+      a{
+        font-size: $smallFontSize;
+        color: $fontColorSecondary;
+      }
+    }
     .essay {
 
     }
@@ -254,6 +261,7 @@ body {
       padding: 0;
       display: flex;
       justify-content: center;
+      width: 100%;
       .segment-image {
         background: $fontColorSecondary;
         padding: 0;
