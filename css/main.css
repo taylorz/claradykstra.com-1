@@ -328,7 +328,7 @@ body {
         height: 10px;
         background-color: #dddddd; }
       body section.project-section .project-body-longImage .long-image-container::-webkit-scrollbar-thumb {
-        background: #00000a; }
+        background: blue; }
       body section.project-section .project-body-longImage .long-image-container img {
         height: 80vh;
         opacity: 0.9; }

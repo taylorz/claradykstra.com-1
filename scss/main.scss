@@ -150,7 +150,7 @@ body {
     .reference {
       padding: $buffer 0;
       font-size: $smallFontSize;
-      color: $fontColorSecondary; 
+      color: $fontColorSecondary;
       a{
         font-size: $smallFontSize;
         color: $fontColorSecondary;
@@ -353,7 +353,7 @@ body {
           background-color: $bgColorMedium;
         }
         &::-webkit-scrollbar-thumb {
-          background: $fontColorPrimary;
+          background: $primaryColor;
         }
         img {
           height: 80vh;
