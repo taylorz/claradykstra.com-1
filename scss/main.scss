@@ -183,6 +183,9 @@ body {
         height: 100%;
         position: absolute;
         z-index: 100;
+        @include breakpoint(sm) {
+          height: 0;
+        }
         // background: blue;
         // opacity: .7;
         &.prev {
@@ -213,6 +216,8 @@ body {
             }
           }
         }
+        .slick-track {
+        }
         .slick-slide {
           position: relative;
         }
@@ -228,6 +233,13 @@ body {
             flex: 0 0 auto;  /* IE */
             object-fit: scale-down; /* FF */
             // width: 600px;
+          }
+        }
+      }
+      .the-carousel {
+        .slick-track {
+          @include breakpoint(sm) {
+            height: 50vh;
           }
         }
       }
@@ -260,6 +272,10 @@ body {
           text-align: center;
           font-size: $largeFontSize*1.5;
           line-height: $largeLineHeight*1.5;
+          @include breakpoint(sm) {
+            font-size: $largeFontSize;
+            line-height: $largeLineHeight;
+          }
           // color: blue;
         }
        p {
@@ -306,6 +322,12 @@ body {
       .segment-video {
         background: none;
         text-align: center;
+        iframe {
+          width: 100%;
+          @include breakpoint(sm) {
+            height: auto;
+          }
+        }
       }
       &.no-mg {
         margin: 0 0; padding: 0;

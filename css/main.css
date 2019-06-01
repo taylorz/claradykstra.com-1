@@ -206,6 +206,9 @@ body {
         height: 100%;
         position: absolute;
         z-index: 100; }
+        @media (max-width: 768px) {
+          body section.project-section .project-body-carousel .carousel-control {
+            height: 0; } }
         body section.project-section .project-body-carousel .carousel-control.prev {
           left: 0; }
           body section.project-section .project-body-carousel .carousel-control.prev:hover {
@@ -238,6 +241,9 @@ body {
             /* IE */
             object-fit: scale-down;
             /* FF */ }
+      @media (max-width: 768px) {
+        body section.project-section .project-body-carousel .the-carousel .slick-track {
+          height: 50vh; } }
       body section.project-section .project-body-carousel .the-carousel-captions {
         padding: 0 0 50px 0 !important;
         font-size: 14px;
@@ -263,6 +269,10 @@ body {
         text-align: center;
         font-size: 51px;
         line-height: 76.5px; }
+        @media (max-width: 768px) {
+          body section.project-section .project-body-statement h3 {
+            font-size: 34px;
+            line-height: 51px; } }
       body section.project-section .project-body-statement p {
         margin-bottom: 63px; }
         body section.project-section .project-body-statement p:last-child {
@@ -293,6 +303,11 @@ body {
       body section.project-section .project-body-segment .segment-video {
         background: none;
         text-align: center; }
+        body section.project-section .project-body-segment .segment-video iframe {
+          width: 100%; }
+          @media (max-width: 768px) {
+            body section.project-section .project-body-segment .segment-video iframe {
+              height: auto; } }
       body section.project-section .project-body-segment.no-mg {
         margin: 0 0;
         padding: 0; }
