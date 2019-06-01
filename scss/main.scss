@@ -82,7 +82,7 @@ body {
       border-top: 1px solid $bgColorMedium;
       &.project-item-index {
         padding: $buffer*3;
-        padding-right: $buffer*4; //WEIRD
+        padding-right: $buffer*3;
       }
       .project-header {
         margin-bottom: $buffer*3;
