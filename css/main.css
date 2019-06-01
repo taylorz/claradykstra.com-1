@@ -145,42 +145,44 @@ body {
           @media (max-width: 992px) {
             body section.project-section .project-item .project-header .project-year {
               text-align: left; } }
-    body section.project-section .project-body .project-summary {
-      font-family: "IBM Plex Sans", serif;
-      font-size: 14px;
-      line-height: 24.5px;
-      margin-bottom: 30px; }
-      body section.project-section .project-body .project-summary a.project-link {
-        font-family: "Inconsolata", serif;
-        font-size: 14px; }
-        body section.project-section .project-body .project-summary a.project-link span {
-          -webkit-transition: all 0.15s ease-in-out;
-          -moz-transition: all 0.15s ease-in-out;
-          -o-transition: all 0.15s ease-in-out;
-          transition: all 0.15s ease-in-out; }
-        body section.project-section .project-body .project-summary a.project-link:hover span {
-          margin-left: 50px;
-          -webkit-transition: all 0.15s ease-in-out;
-          -moz-transition: all 0.15s ease-in-out;
-          -o-transition: all 0.15s ease-in-out;
-          transition: all 0.15s ease-in-out; }
-    body section.project-section .project-body .project-image {
-      overflow: hidden;
-      padding: 0;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center; }
-      body section.project-section .project-body .project-image .matte {
-        background: #bbbbba; }
-        body section.project-section .project-body .project-image .matte img {
-          width: 100%;
-          opacity: .9; }
-          body section.project-section .project-body .project-image .matte img.img-essay {
-            padding: 150px;
-            -webkit-transform: rotate(2deg); }
-            @media (max-width: 768px) {
-              body section.project-section .project-body .project-image .matte img.img-essay {
-                padding: 20px; } }
+    body section.project-section .project-body {
+      margin-right: 0; }
+      body section.project-section .project-body .project-summary {
+        font-family: "IBM Plex Sans", serif;
+        font-size: 14px;
+        line-height: 24.5px;
+        margin-bottom: 30px; }
+        body section.project-section .project-body .project-summary a.project-link {
+          font-family: "Inconsolata", serif;
+          font-size: 14px; }
+          body section.project-section .project-body .project-summary a.project-link span {
+            -webkit-transition: all 0.15s ease-in-out;
+            -moz-transition: all 0.15s ease-in-out;
+            -o-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out; }
+          body section.project-section .project-body .project-summary a.project-link:hover span {
+            margin-left: 50px;
+            -webkit-transition: all 0.15s ease-in-out;
+            -moz-transition: all 0.15s ease-in-out;
+            -o-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out; }
+      body section.project-section .project-body .project-image {
+        overflow: hidden;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center; }
+        body section.project-section .project-body .project-image .matte {
+          background: #bbbbba; }
+          body section.project-section .project-body .project-image .matte img {
+            width: 100%;
+            opacity: .9; }
+            body section.project-section .project-body .project-image .matte img.img-essay {
+              padding: 150px;
+              -webkit-transform: rotate(2deg); }
+              @media (max-width: 768px) {
+                body section.project-section .project-body .project-image .matte img.img-essay {
+                  padding: 20px; } }
     body section.project-section .reference {
       padding: 10px 0;
       font-size: 14px;
@@ -328,7 +330,7 @@ body {
         height: 10px;
         background-color: #dddddd; }
       body section.project-section .project-body-longImage .long-image-container::-webkit-scrollbar-thumb {
-        background: blue; }
+        background: #00000a; }
       body section.project-section .project-body-longImage .long-image-container img {
         height: 80vh;
         opacity: 0.9; }

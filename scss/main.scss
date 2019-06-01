@@ -103,6 +103,7 @@ body {
       }
     }
     .project-body {
+      margin-right: 0;
       .project-summary {
         font-family: $primaryFontFamily;
         font-size: $smallFontSize;
@@ -353,7 +354,7 @@ body {
           background-color: $bgColorMedium;
         }
         &::-webkit-scrollbar-thumb {
-          background: $primaryColor;
+          background: $fontColorPrimary;
         }
         img {
           height: 80vh;
