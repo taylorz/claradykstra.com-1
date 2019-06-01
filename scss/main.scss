@@ -149,6 +149,8 @@ body {
 
     .reference {
       padding: $buffer 0;
+      font-size: $smallFontSize;
+      color: $fontColorSecondary; 
       a{
         font-size: $smallFontSize;
         color: $fontColorSecondary;

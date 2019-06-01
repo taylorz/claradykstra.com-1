@@ -182,7 +182,9 @@ body {
               body section.project-section .project-body .project-image .matte img.img-essay {
                 padding: 20px; } }
     body section.project-section .reference {
-      padding: 10px 0; }
+      padding: 10px 0;
+      font-size: 14px;
+      color: #bbbbba; }
       body section.project-section .reference a {
         font-size: 14px;
         color: #bbbbba; }
