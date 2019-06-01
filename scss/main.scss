@@ -261,6 +261,7 @@ body {
     } //carousel
     .project-body-statement {
       margin: $buffer*15 0;
+      width: 100%;
       @include breakpoint(sm) {
         margin-top: $buffer*3 0 0 0;
       }
