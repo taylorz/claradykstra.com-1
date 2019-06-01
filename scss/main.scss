@@ -135,6 +135,9 @@ body {
           &.img-essay {
             padding: $buffer*15;
             -webkit-transform: rotate(2deg);
+            @include breakpoint(sm) {
+              padding: $buffer*2;
+            }
           }
         }
       }
@@ -309,10 +312,17 @@ body {
         padding: 0;
         background: $fontColorSecondary;
         width: 100vw;
-        overflow-y: scroll;
+        overflow-x: scroll;
         // margin: 0 0 $buffer*20 0;
         margin: 0;
         margin-top: $buffer*3;
+        &::-webkit-scrollbar {
+          height: $buffer;
+          background-color: $bgColorMedium;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: $fontColorPrimary;
+        }
         img {
           height: 80vh;
           opacity: 0.9;
