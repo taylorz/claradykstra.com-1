@@ -124,19 +124,23 @@ body {
       }
       .project-image {
         overflow: hidden;
-        background: $fontColorSecondary;
+        // background: $fontColorSecondary;
         padding: 0;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        img {
-          width: 100%;
-          opacity: .9;
-          &.img-essay {
-            padding: $buffer*15;
-            -webkit-transform: rotate(2deg);
-            @include breakpoint(sm) {
-              padding: $buffer*2;
+        .matte {
+          background: $fontColorSecondary;
+          img {
+            width: 100%;
+            // height: 100%;
+            opacity: .9;
+            &.img-essay {
+              padding: $buffer*15;
+              -webkit-transform: rotate(2deg);
+              @include breakpoint(sm) {
+                padding: $buffer*2;
+              }
             }
           }
         }
