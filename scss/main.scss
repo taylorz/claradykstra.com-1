@@ -232,6 +232,9 @@ body {
             opacity: .9;
             flex: 0 0 auto;  /* IE */
             object-fit: scale-down; /* FF */
+            @include breakpoint(sm) {
+              max-width: 65vw;
+            }
             // width: 600px;
           }
         }
@@ -239,7 +242,7 @@ body {
       .the-carousel {
         .slick-track {
           @include breakpoint(sm) {
-            height: 50vh;
+            height: 30vh;
           }
         }
       }

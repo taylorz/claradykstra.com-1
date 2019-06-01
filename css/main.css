@@ -241,9 +241,12 @@ body {
             /* IE */
             object-fit: scale-down;
             /* FF */ }
+            @media (max-width: 768px) {
+              body section.project-section .project-body-carousel .the-carousel .essay-page img, body section.project-section .project-body-carousel .the-carousel .essay-page-captions img, body section.project-section .project-body-carousel .the-carousel-captions .essay-page img, body section.project-section .project-body-carousel .the-carousel-captions .essay-page-captions img {
+                max-width: 65vw; } }
       @media (max-width: 768px) {
         body section.project-section .project-body-carousel .the-carousel .slick-track {
-          height: 50vh; } }
+          height: 30vh; } }
       body section.project-section .project-body-carousel .the-carousel-captions {
         padding: 0 0 50px 0 !important;
         font-size: 14px;
