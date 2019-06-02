@@ -103,7 +103,7 @@ body {
       }
     }
     .project-body {
-      margin-right: 0;
+      // margin-right: 0;
       .project-summary {
         font-family: $primaryFontFamily;
         font-size: $smallFontSize;
@@ -126,7 +126,7 @@ body {
       .project-image {
         overflow: hidden;
         // background: $fontColorSecondary;
-        padding: 0;
+        // padding: 0;
         display: flex;
         align-items: flex-start;
         justify-content: center;
